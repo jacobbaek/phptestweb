@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: phpwebtest
+spec:
+  containers:
+    - image: dubaek/phpwebtest
+      name: phpwebtest
+      env:
+        - name: TDOMAIN
+          value: "youtube.com"
+
